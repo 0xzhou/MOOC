@@ -69,6 +69,24 @@ print_all(1)(3)(4)
 
 注意: 逻辑操作中，总是先执行左边再执行右边，若左边不符合要求时，直接返回该语句。
 
+判断是否执行的时候根据的是 **false value:** None, 0 , '', False+ 为空的数据(set, list...)
+
+规则：
+
+`and:`
+
+		1. 先执行左边语句
+  		2. 如果false value, 则返回该false value
+  		3. else执行右边语句
+
+`or`:
+
+ 	1. 先执行左边语句
+ 	2. 如果为true value，则返回该value
+ 	3. else执行右边语句
+
+总结：`and` 中要判断每个子句是否为true value, `or` 中要判断所有子句中是否存在第一个true value.
+
 ```python
 def has_big_sqrt(x):
 	return x>0 and sqrt(x)>10

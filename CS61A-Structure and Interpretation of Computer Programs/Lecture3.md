@@ -14,7 +14,7 @@ A call expression and the body of the function being called are evaluated in dif
 
 
 
-False value in Python: False, 0, ' ', None
+**False value** in Python: False, 0, ' ', None
 
 True value: else
 
