@@ -13,19 +13,31 @@ My study of this course is based on the Spring 2020.
     - [x] Lecture1: Functions
     - [x] Lecture2: Names
   - [ ] Homework: HW 01
-  - [ ] Lab and Discussion
+  - [ ] Lab 00
+  - [ ] Disc 00
 - [x] Week2
   - [x] video
     - [x] Lecture3: Control
     - [x] Lecture4: Higher-Order Functions
     - [x] Lecture5: Environments
-  - [x] Homework: HW 02
-  - [ ] Lab01:
+  - [x] HW 02
+  - [ ] Lab 01:
     - [x] Required Questions
     - [ ] Optional Questions
+  - [ ] Disc 01
 - [ ] Week3
   - [ ] video
     - [x] Lecture6: Iteration
-    - [ ] Lecture7: Design
-    - [ ] Function Examples
+    - [x] Lecture7: Design
+    - [ ] Function8: Examples
   - [ ] Hog Contest
+  - [ ] Lab 02
+  - [ ] Disc 02
+- [ ] Week4
+  - [ ] video
+    - [ ] Lecture9: Recursion
+    - [ ] Lecture10: Tree Recursion
+  - [ ] Disc 03
+  - [ ] HW 03
+- [ ] Week5
+  - [ ] video
