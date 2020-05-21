@@ -29,15 +29,18 @@ My study of this course is based on the Spring 2020.
   - [ ] video
     - [x] Lecture6: Iteration
     - [x] Lecture7: Design
-    - [ ] Function8: Examples
+    - [ ] Function8: Function Examples
   - [ ] Hog Contest
   - [ ] Lab 02
   - [ ] Disc 02
 - [ ] Week4
   - [ ] video
-    - [ ] Lecture9: Recursion
+    - [x] Lecture9: Recursion
     - [ ] Lecture10: Tree Recursion
   - [ ] Disc 03
   - [ ] HW 03
 - [ ] Week5
   - [ ] video
+    - [ ] Lecture11: Containers
+    - [ ] Lecture12: Data Abstraction
+    - [ ] Lecture13: Trees
