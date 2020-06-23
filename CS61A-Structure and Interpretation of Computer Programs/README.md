@@ -36,7 +36,7 @@ My study of this course is based on the Spring 2020.
 - [ ] Week4
   - [ ] video
     - [x] Lecture9: Recursion
-    - [ ] Lecture10: Tree Recursion
+    - [x] Lecture10: Tree Recursion
   - [ ] Disc 03
   - [ ] HW 03
 - [ ] Week5

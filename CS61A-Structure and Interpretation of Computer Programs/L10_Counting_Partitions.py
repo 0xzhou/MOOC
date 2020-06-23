@@ -1,7 +1,3 @@
-
-
-
-
 def count_partitions(n,m):
     if n==0:
         return 1
