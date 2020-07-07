@@ -1,3 +1,5 @@
+## Stanford CS 106L Fall 2019 Notes
+
 ### L0-Introduction
 
 **Goals of Courses:**
@@ -7,7 +9,7 @@
 
 **3 Assignments:**
 
-- [ ] A1
+- [ ] A1: Streams, Vectors
 
 - [ ] A2
 - [ ] A3
@@ -24,7 +26,7 @@
 
 
 
-#### Design Philosiphy:
+#### Design Philosophy:
 
 * full control , responsibility and choice if want
 * enforce safety at compile
@@ -41,6 +43,10 @@ We often want our programs to interact with external devices(screen,files).
 We might read a double from a file.(file->string->double). Also write.
 
 Streams provides unified interface for interacting with external input.
+
+
+
+### L2-Streams II
 
 
 
