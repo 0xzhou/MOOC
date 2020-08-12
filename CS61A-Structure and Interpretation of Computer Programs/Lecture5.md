@@ -13,7 +13,7 @@
 * Every local frame has a parent frame(often global)
 * The parent of a frame is the parent of the function called
 
-caution !: parent frame
+caution!: parent frame
 
 ```python
 def make_adder(n):

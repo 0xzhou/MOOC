@@ -17,10 +17,12 @@ high-resolution images classification
 - eight layers with weights
   - 5 convolutional layers
   - 3 fully connected layers
-- ReLU activition function
+- ReLU activation function: training faster
+- LRN: increase the generalization
+- Overlapping Polling
 - Reducing overfitting
-  - Data augumentaion
-  - Dropout
+  - Data augmentation
+  - Dropout in FC layers
 
 ### Evaluation
 

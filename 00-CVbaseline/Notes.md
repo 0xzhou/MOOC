@@ -43,7 +43,9 @@ $$
 b_{x,y}^i=\frac {a_{x,y}^i}{k+\sum _{j=max(0,i-n/2)}^{min(N-1),i+n/2}(a_{x,y}^i)^2}
 $$
 
-**Overlapping Pooling(重叠池化)：**
+**Overlapping Pooling(重叠池化)**
+
+
 
 
 
