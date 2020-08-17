@@ -1,4 +1,4 @@
-## Lecture 4sThe Fibonacci Sequence: 
+## Lecture 4 The Fibonacci Sequence: 
 
 - the golden spiral(natural)
 

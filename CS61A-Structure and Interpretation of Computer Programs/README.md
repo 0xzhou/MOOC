@@ -6,7 +6,7 @@ My study of this course is based on the Spring 2020 and Sommer 2020.
 
 ## Notes
 
-### Lecture1 Intro
+### Lecture1. Intro
 
 * A course about managing complexity
   * mastering abstraction
@@ -24,7 +24,7 @@ Nested Expression: 嵌套表达
 
 
 
-### Lecture2 Functions
+### Lecture2. Functions
 
 *tips:*  `Ctrl+l`:  clean lines in python interpreter
 
@@ -72,7 +72,7 @@ Nested Expression: 嵌套表达
   
     
 
-### Lecture3 Control 
+### Lecture3. Control 
 
 - `None` in python:
   - None indicates that nothing is returned, represents nothing in python
@@ -101,29 +101,85 @@ Nested Expression: 嵌套表达
 
 
 
-### Lecture4 Higher-Order Functions 
+### Lecture4. Higher-Order Functions 
 
-- the golden spiral(natural)
-
-- **iteration**---not use the `list` type
-
-  ```python
-  def fib(n):
-      pred,curr=0,1 # 0th and 1st Fibonacci Number
-      k=1
-      while k<n:
-          pred,curr=curr,curr+pred
-      	k+=1
-      return curr
-  # not include the n=0 situation
-  ```
+**Higher-Order Functions:** A function that takes a function as an argument value or returns a function as a return value.
 
 
 
-Designing Functions:
+- Generalizing 
 
-- domain(input) & range(output)
-- behavior: relationship between input and output of function
+  - patterns  with arguments
+  - over computational processes
+
+- Functions as return values
+
+  - Functions defined within other function bodies are bound to names in a local frame
+
+- Function Composition
+
+- Function Abstraction
+
+  - Names should convey the meaning or purpose of the values to which they are bound
+
+  - The type of value bound to the name is best documented in a function's docstring
+
+  - Function names typically convey their effect (**print**), their behavior (**triple**), or the value returned (**abs**).
+
+    
+
+### Lecture5. Environments Diagrams
+
+#### Lambda Expressions
+
+**Lambda**表达了python中用于创建**匿名**函数的特殊语法。表达式可以理解为一个小的匿名函数，但只能有**一个表达式**，具体表达式如下：
+
+```python
+lambda argument: manipulate argument
+```
+
+`argument`就是这个匿名函数传入的函数，冒号后面是我们对这个参数的操作方法。
+
+`lambda` is a function with formal parameter. It is no "return" keyword and mush includes **only a single expression**.
+
+`lambda` function has **no intrinsic function name**. When we call it, it actually call the function $\lambda$.
+
+
+
+### Lecture6. Recursion
+
+#### Recursive Functions(递归函数)
+
+A function calls itself in the function body:
+
+* conditional statement check for **base cases**: without recursive calls
+* **recursive cases**: with recursive calls
+
+#### Recursion in Environment Diagrams
+
+​                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+
+example: sum digits, factorial function
+
+
+
+**Iteration vs Recursion:**
+
+Iteration is a special case of recursion.
+
+
+
+#### Mutual Recursion
+
+2 Functions call each other.
+
+
+
+### Lecture7.  Tree Recursion
+
+### Lecture8.  Sequences & Data Abstraction
+
+
 
 
 
