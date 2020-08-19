@@ -155,32 +155,86 @@ A function calls itself in the function body:
 * conditional statement check for **base cases**: without recursive calls
 * **recursive cases**: with recursive calls
 
-#### Recursion in Environment Diagrams
+#### Recursion and Iteration
 
-​                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
-
-example: sum digits, factorial function
-
-
-
-**Iteration vs Recursion:**
-
-Iteration is a special case of recursion.
-
-
-
-#### Mutual Recursion
-
-2 Functions call each other.
+Can be tricky: Iteration is a special case of recursion. Idea: Figure out what state must be maintained by the iterative function.
 
 
 
 ### Lecture7.  Tree Recursion
 
+Tree-shaped processes arise whenever executing the body of a recursive function makes more than one recursive call.
+
+```python
+# Fibonacci list
+def fib(n):
+	if n==0:
+		return 0
+	elif n==1:
+		return 1
+	else:
+		return fib(n-1)+fib(n-2)
+```
+
+将递归过程可视化可得**树形结构**:
+
+![](https://raw.githubusercontent.com/Mingy2018/Markdown-photoes/master/img/20200819155036.png)
+
+
+
+**Example**: Counting Partitions
+
+The number of partitions of a positive integer n, using parts up to size m, is the number of ways in which n can be expressed as the sum of positive integer parts up to m in increasing order.
+
+Computation Graph:
+
+![](https://raw.githubusercontent.com/Mingy2018/Markdown-photoes/master/img/20200819155931.png)
+
+代码实现:
+
+```python
+def count_partitions(n,m):
+	if n==0:
+		return 1
+	elif n<0:
+		return 0
+	elif m==0:
+		return 0
+	else:
+		with_m=count_partitions(n-m,m)
+		without_m=count_partitions(n,m-1)
+		return with_m+without_m
+	
+```
+
+
+
 ### Lecture8.  Sequences & Data Abstraction
 
+- Container: Built-in operators for testing whether an element appears in a compound value
 
+  ```shell
+  >>> digit = [1,2,3]
+  >>> 1 in digit
+  True
+  ```
 
+- Ranges: A range is a sequence of consecutive integers.
 
+  <img src="https://raw.githubusercontent.com/Mingy2018/Markdown-photoes/master/img/20200819161918.png" style="zoom:67%;" />
 
+- string: single quoted string will parse the EC(Escape character-转义字符)
 
+```shell
+>>> """The Zen of Python
+claims, Readability counts.
+Read more: import this."""
+'The Zen of Python\nclaims, Readability counts.\nRead more: import this.'
+```
+
+- Dictionaries:
+  - **unordered** collections of key-value pairs 
+  - A key of a dictionary cannot be a list or a dictionary (or any mutable type)
+  - Two keys **cannot be equal**
+
+- Data abstraction:  A methodology by which functions enforce an abstraction barrier between **representation** and **use**
