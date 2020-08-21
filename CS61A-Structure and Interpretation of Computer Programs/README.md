@@ -238,3 +238,70 @@ Read more: import this."""
   - Two keys **cannot be equal**
 
 - Data abstraction:  A methodology by which functions enforce an abstraction barrier between **representation** and **use**
+
+- Abstraction Barriers(抽象隔离) 
+
+  
+
+#### Lab 4
+
+- **Reverse** a list `lst`
+
+  - `lst[::-1]`
+
+  - `lst.reverse()`
+
+  - `reversed(lst)`
+
+  - iteratively : `range(len(lst)-1,-1,-1)` 循环遍历
+
+  - recursively: 非常巧妙
+
+    ```python
+    def reverse_recursive(lst):
+        """Returns the reverse of the given list.
+        >>> reverse_recursive([1, 2, 3, 4])
+        [4, 3, 2, 1]
+    	"""
+        backwards= lambda l : (backwards(l[1:]) + l[:1] if l else [])
+        return backwards(lst)
+    ```
+
+
+
+
+
+### Lecture9.  Functional Decomposition & Debugging
+
+- Assertions断言
+
+- Testing
+
+  - Python provides a way to write tests as part of the **docstring** 
+
+    ![](https://raw.githubusercontent.com/Mingy2018/Markdown-photoes/master/img/20200821142024.png)
+
+    ```shell
+     python3 -m doctest file.py
+    ```
+
+- Print Debugging
+
+  - Quickly gives you an insight into what is going on
+
+- Interactive Debugging: live
+
+  ```shell
+  python3 -i file.py
+  ```
+
+- Error Types
+  - Syntax Error: typo
+    - Extra or missing parentheses(括号)
+    - Missing colon
+    - statement with no content
+  - Indentation(缩进) Error 
+  - Type Error: 'x' object is not callable, None Type operations, Name Error
+- Traceback
+  - Most recent call is at the bottom
+  - Look at each line, bottom to top and see which one might be causing it

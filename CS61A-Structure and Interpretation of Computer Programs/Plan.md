@@ -23,7 +23,7 @@
   - [ ] video
     - [x] Lecture6: Iteration
     - [x] Lecture7: Design
-    - [ ] Function8: Function Examples
+    - [x] Function8: Function Examples
   - [ ] Hog Contest
   - [ ] Lab 02
   - [ ] Disc 02
@@ -33,11 +33,22 @@
     - [x] Lecture10: Tree Recursion
   - [ ] Disc 03
   - [ ] HW 03
-- [ ] Week5
-  - [ ] video
-    - [ ] Lecture11: Containers
-    - [ ] Lecture12: Data Abstraction
-    - [ ] Lecture13: Trees
 
 ### Sommer 2020
+
+- [ ] Week3
+  - [ ] Sequences & Data Abstraction
+  - [x] Functional Decomposition & Debugging
+  - [ ] Trees
+  - [ ] Mutable Sequences
+
+
+
+
+
+
+
+
+
+
 
